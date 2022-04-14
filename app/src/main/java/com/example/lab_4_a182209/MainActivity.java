@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Laptop> getAllLaptopInfo() {
         List<Laptop>allLaptop = new ArrayList<Laptop>();
-        allLaptop.add(new Laptop("Asus",R.drawable.asus));
-        allLaptop.add(new Laptop("Apple",R.drawable.apple));
-        allLaptop.add(new Laptop("Dell",R.drawable.dell));
-        allLaptop.add(new Laptop("Lenovo", R.drawable.lenovo));
-        allLaptop.add(new Laptop("HP",R.drawable.hp));
-        allLaptop.add(new Laptop("Realme",R.drawable.realme));
+        allLaptop.add(new Laptop("Asus",R.drawable.asus,"This is Asus"));
+        allLaptop.add(new Laptop("Apple",R.drawable.apple,"This is Apple"));
+        allLaptop.add(new Laptop("Dell",R.drawable.dell,"This is Dell"));
+        allLaptop.add(new Laptop("Lenovo", R.drawable.lenovo,"This is Lenovo"));
+        allLaptop.add(new Laptop("HP",R.drawable.hp,"This is HP"));
+        allLaptop.add(new Laptop("Realme",R.drawable.realme,"This is Realme"));
 
 
 

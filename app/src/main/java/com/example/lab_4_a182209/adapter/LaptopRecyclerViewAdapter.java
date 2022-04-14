@@ -37,8 +37,9 @@ public class LaptopRecyclerViewAdapter extends  RecyclerView.Adapter<LaptopRecyc
 
     @Override
     public void onBindViewHolder(@NonNull LaptopViewHolder holder, int position) {
-        holder.tvBeverageName.setText(laptopList.get(position).getName());
-        holder.imgViewBeverageImage.setImageResource(laptopList.get(position).getImage());
+        holder.tvLaptopBrand.setText(laptopList.get(position).getName());
+        holder.imgViewLaptopImage.setImageResource(laptopList.get(position).getImage());
+        holder.tvLaptopDescription.setText(laptopList.get(position).getDescription());
 
     }
 
@@ -50,12 +51,14 @@ public class LaptopRecyclerViewAdapter extends  RecyclerView.Adapter<LaptopRecyc
 
 
     public class LaptopViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        public TextView tvBeverageName;
-        public ImageView imgViewBeverageImage;
+        public TextView tvLaptopBrand,tvLaptopDescription;
+        public ImageView imgViewLaptopImage;
+
         public LaptopViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvBeverageName=itemView.findViewById(R.id.tv_laptop_name);
-            imgViewBeverageImage=itemView.findViewById(R.id.img_laptop);
+            tvLaptopBrand=itemView.findViewById(R.id.tv_laptop_name);
+            imgViewLaptopImage=itemView.findViewById(R.id.img_laptop);
+            tvLaptopDescription=itemView.findViewById(R.id.tv_laptop_description);
             itemView.setOnClickListener(this);
         }
 
@@ -63,7 +66,10 @@ public class LaptopRecyclerViewAdapter extends  RecyclerView.Adapter<LaptopRecyc
         public void onClick(View v) {
             Toast.makeText(v.getContext(), "Laptop Brand "+ laptopList.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(v.getContext(), LaptopDetailActivity.class);
-            intent.putExtra("laptopName",laptopList.get(getAdapterPosition()).getName());
+            intent.putExtra("laptopBrand",laptopList.get(getAdapterPosition()).getName());
+            intent.putExtra("laptopImage",laptopList.get(getAdapterPosition()).getImage());
+            intent.putExtra("laptopDescription",laptopList.get(getAdapterPosition()).getDescription());
+
             v.getContext().startActivity(intent);
         }
     }

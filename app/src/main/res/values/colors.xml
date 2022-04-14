@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="text_color">#F83F04</color>
     <color name="bg_color">#EC7CE5</color>
+    <color name="transparent">#00FFFFFF</color>
 
 
 </resources>

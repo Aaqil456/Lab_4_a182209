@@ -3,6 +3,7 @@ package com.example.lab_4_a182209;
 public class Laptop {
     String brand;
     int image;
+    String description;
 
     public String getName() {
         return brand;
@@ -20,9 +21,18 @@ public class Laptop {
         this.image = image;
     }
 
-    public Laptop(String brand, int image) {
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Laptop(String brand, int image, String description) {
         this.brand = brand;
         this.image = image;
+        this.description= description;
 
 
     }

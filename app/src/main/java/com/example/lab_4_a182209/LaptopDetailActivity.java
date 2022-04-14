@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LaptopDetailActivity extends AppCompatActivity {
-    TextView tvNameDetail;
+    TextView tvBrandDetail,tvBrandDescription;
+    ImageView ivBrand;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +18,12 @@ public class LaptopDetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        tvNameDetail=findViewById(R.id.tv_laptop_name_detail);
-        tvNameDetail.setText(intent.getStringExtra("laptopName"));
+        tvBrandDetail=findViewById(R.id.tv_laptop_brand_detail);
+        ivBrand=findViewById(R.id.img_laptop_detail);
+        tvBrandDescription=findViewById(R.id.tv_description);
+
+        tvBrandDetail.setText(intent.getStringExtra("laptopBrand"));
+        ivBrand.setImageResource(intent.getIntExtra("laptopImage",0));
+        tvBrandDescription.setText(intent.getStringExtra("laptopDescription"));
     }
 }
