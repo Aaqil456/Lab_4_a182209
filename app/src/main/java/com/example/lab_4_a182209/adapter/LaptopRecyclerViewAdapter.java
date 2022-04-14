@@ -61,7 +61,7 @@ public class LaptopRecyclerViewAdapter extends  RecyclerView.Adapter<LaptopRecyc
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(v.getContext(), "Laptop Name "+ laptopList.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(v.getContext(), "Laptop Brand "+ laptopList.get(getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(v.getContext(), LaptopDetailActivity.class);
             intent.putExtra("laptopName",laptopList.get(getAdapterPosition()).getName());
             v.getContext().startActivity(intent);

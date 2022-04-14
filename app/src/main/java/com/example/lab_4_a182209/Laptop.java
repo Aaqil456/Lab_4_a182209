@@ -1,15 +1,15 @@
 package com.example.lab_4_a182209;
 
 public class Laptop {
-    String name;
+    String brand;
     int image;
 
     public String getName() {
-        return name;
+        return brand;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String brand) {
+        this.brand = brand;
     }
 
     public int getImage() {
@@ -20,8 +20,8 @@ public class Laptop {
         this.image = image;
     }
 
-    public Laptop(String name, int image) {
-        this.name = name;
+    public Laptop(String brand, int image) {
+        this.brand = brand;
         this.image = image;
 
 
