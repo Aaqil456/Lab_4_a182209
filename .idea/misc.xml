@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Lab_4_a182209/app/src/main/res/drawable/bg_color_2.xml" value="0.2203125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Lab_4_a182209/app/src/main/res/layout/activity_laptop_detail.xml" value="0.17119565217391305" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Lab_4_a182209/app/src/main/res/layout/activity_main.xml" value="0.17119565217391305" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Lab_4_a182209/app/src/main/res/layout/laptop_row.xml" value="0.18" />
