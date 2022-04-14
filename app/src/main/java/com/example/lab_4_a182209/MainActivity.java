@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
         allLaptop.add(new Laptop("Asus",R.drawable.asus));
         allLaptop.add(new Laptop("Apple",R.drawable.apple));
         allLaptop.add(new Laptop("Dell",R.drawable.dell));
-        allLaptop.add(new Laptop("Lenovo",R.drawable.lenovo));
+        allLaptop.add(new Laptop("Lenovo", R.drawable.lenovo));
         allLaptop.add(new Laptop("HP",R.drawable.hp));
+       // allLaptop.add(new Laptop("Realme",R.drawable.realme));
+
 
 
         return allLaptop;
