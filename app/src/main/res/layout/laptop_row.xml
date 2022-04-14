@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="16dp"
+    app:cardCornerRadius="26dp"
     app:cardUseCompatPadding="true"
     tools:layout_editor_absoluteY="81dp">
 
